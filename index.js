@@ -40,7 +40,6 @@ const cors = require("cors");
 const app = express();
 
 const PORT_WEB = process.env.PORT || config.port || 3000;
-
 app.listen(PORT_WEB, "0.0.0.0", () => {
   console.log("✅ WEB AKTIF DI PORT:", PORT_WEB);
 });
