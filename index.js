@@ -1078,8 +1078,8 @@ console.log(chalk.bold.white(`\n
 
 console.log(chalk.cyanBright(`
 ─────────────────────────────────────
-NAME APPS   : IndictiveCore
-AUTHOR      : AiiSigma
+NAME APPS   : Apk Bug
+AUTHOR      : @vannhosting
 ID OWN      : ${ownerIds}
 VERSION     : 3 ( III )
 ─────────────────────────────────────\n\n`));
@@ -2300,8 +2300,8 @@ MASUKIN BOT TOKEN TELE LU DAN ID TELE LU ATAU ID GROUP TELEL LU
 Gunanya buat apa bang?
 itu kalo ada user yang make fitur bug nanti si bot bakal ngirim log history nya ke id telelu, kalo pake id GC tele lu, nanti ngirim history nya ke GC tele lu bisa lu atur aja mau ngirim nya ke mana ID / ID GC
 */
-const BOT_TOKEN = "7903358806:AAFkZcHHbkehAmnL83F4D_LiaV-UdiKa4M8";
-const CHAT_ID = "7250235697";
+const BOT_TOKEN = "8198417165:AAGRdppBnltMwvGRDxeC1TeUVZMamLMHoUc";
+const CHAT_ID = "7517485937";
 // simpan waktu terakhir eksekusi (global cooldown)
 let lastExecution = 0;
 
