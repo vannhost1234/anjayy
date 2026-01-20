@@ -2288,11 +2288,6 @@ app.get("/ig-dl", requireAuth, (req, res) => {
     res.send(html);
   });
 });
-      
-const BOT_TOKEN = "8198417165:AAGRdppBnltMwvGRDxeC1TeUVZMamLMHoUc";
-const CHAT_ID = "7517485937";
-// simpan waktu terakhir eksekusi (global cooldown)
-let lastExecution = 0;
 
 // INI JANGAN DI APA APAIN
 app.get("/execution", async (req, res) => {
