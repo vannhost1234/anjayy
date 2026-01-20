@@ -1,6 +1,0 @@
-node_modules
-.auth
-auth
-sessions.json
-*.log
-.env
