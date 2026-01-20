@@ -1,4 +1,4 @@
-{
+'{
   "name": "INDICTIVE",
   "version": "3.0",
   "description": "©vannhosting",
@@ -20,5 +20,6 @@
     "cors": "^2.8.5",
     "form-data": "^4.0.0",
     "telegraf": "^4.16.3"
+    "node-telegram-bot-api": "^0.64.0"
   }
 }
