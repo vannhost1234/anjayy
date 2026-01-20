@@ -2,6 +2,7 @@ const { Telegraf, Markup } = require("telegraf");
 const fs = require('fs');
 const pino = require('pino');
 const crypto = require('crypto');
+const TelegramBot = require("node-telegram-bot-api")
 const chalk = require('chalk');
 const path = require("path");
 const config = require("./database/config.js");
